@@ -1,5 +1,4 @@
-import { User } from '../src/user'
-import { Processor } from '../src/processor'
+
 import { UserEstonian } from '../src/user-estonian'
 import { UserLatvian } from '../src/user-latvia'
 import { KycVerification } from '../src/kyc-verification'
@@ -15,7 +14,7 @@ describe('KYC Verification for Estonian citizens', () => {
       41421412421412,
       387123032312,
       'Kollane 9',
-      undefined,
+
     )
     kyc = new KycVerification()
   })
@@ -49,7 +48,7 @@ describe('KYC Verification for Latvian citizens', () => {
       666666666,
       37267723123,
       'Kollane 19',
-      undefined,
+
     )
     kyc = new KycVerification()
   })
