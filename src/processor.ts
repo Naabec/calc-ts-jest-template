@@ -8,7 +8,7 @@ export class Processor {
     return user.consentGiven === true
   }
   checkUserAge(user: User): boolean {
-    return user.age !== undefined && user.age > 18;
+    return user.age !== undefined && user.age > 18
   }
   revokeConsent(user: User): void {
     user.consentGiven = false
