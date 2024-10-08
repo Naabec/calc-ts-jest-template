@@ -1,4 +1,3 @@
-
 import { UserEstonian } from '../src/user-estonian'
 import { UserLatvian } from '../src/user-latvia'
 import { KycVerification } from '../src/kyc-verification'
@@ -7,15 +6,7 @@ describe('KYC Verification for Estonian citizens', () => {
   let userEst: UserEstonian
   let kyc: KycVerification
   beforeEach(() => {
-    userEst = new UserEstonian(
-      'Aleksei',
-      'Golov',
-      19,
-      41421412421412,
-      387123032312,
-      'Kollane 9',
-
-    )
+    userEst = new UserEstonian('Aleksei', 'Golov', 19, 41421412421412, 387123032312, 'Kollane 9')
     kyc = new KycVerification()
   })
   test('Verify that the mobileIDAuthorization field is undefined by default', () => {
@@ -41,15 +32,7 @@ describe('KYC Verification for Latvian citizens', () => {
   let userLat: UserLatvian
   let kyc: KycVerification
   beforeEach(() => {
-    userLat = new UserLatvian(
-      'Dmitri',
-      'Bobrov',
-      19,
-      666666666,
-      37267723123,
-      'Kollane 19',
-
-    )
+    userLat = new UserLatvian('Dmitri', 'Bobrov', 19, 666666666, 37267723123, 'Kollane 19')
     kyc = new KycVerification()
   })
   test('Verify that the mobileIDAuthorization field is undefined by default', () => {
