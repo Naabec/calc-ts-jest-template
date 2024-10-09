@@ -1,5 +1,5 @@
 import { UserEstonian } from '../src/user-estonian'
-import { UserLatvian } from '../src/user-latvia'
+import { UserLatvian } from '../src/user-latvian'
 import { KycVerification } from '../src/kyc-verification'
 
 describe('KYC Verification for Estonian citizens', () => {

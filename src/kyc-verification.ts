@@ -1,5 +1,5 @@
 import { UserEstonian } from './user-estonian'
-import { UserLatvian } from './user-latvia'
+import { UserLatvian } from './user-latvian'
 
 export class KycVerification {
   activateMobileIDForEstonia(user: UserEstonian) {

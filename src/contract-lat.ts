@@ -1,7 +1,7 @@
 import { BaseContract } from './base-contract'
-import { UserLatvian } from './user-latvia'
+import { UserLatvian } from './user-latvian'
 
-export class ContractLat extends BaseContract {
+export class ContractLatvia extends BaseContract {
   signed: boolean
 
   constructor(title: string) {

@@ -1,15 +1,15 @@
 import { UserEstonian } from '../src/user-estonian'
-import { ContractEst } from '../src/contract-est'
-import { UserLatvian } from '../src/user-latvia'
-import { ContractLat } from '../src/contract-lat'
+import { ContractEstonia } from '../src/contract-est'
+import { UserLatvian } from '../src/user-latvian'
+import { ContractLatvia } from '../src/contract-lat'
 
 describe('Contract signing logic - Estonia', () => {
   let userEst: UserEstonian
-  let contractEst: ContractEst
+  let contractEst: ContractEstonia
 
   beforeEach(() => {
     userEst = new UserEstonian('John', 'Doe', 18, 38712030260, 37256710032, 'Kollane 8 - 34')
-    contractEst = new ContractEst('Employment Contract')
+    contractEst = new ContractEstonia('Employment Contract')
   })
 
   it('should not allow signing if Mobile ID authorization is not activated', () => {
@@ -27,11 +27,11 @@ describe('Contract signing logic - Estonia', () => {
 
 describe('Contract signing logic - Latvia', () => {
   let userLat: UserLatvian
-  let contractLat: ContractLat
+  let contractLat: ContractLatvia
 
   beforeEach(() => {
     userLat = new UserLatvian('Igor', 'Perevoztskikov', 36, 38700000, 3725245532, 'Kollane 18 - 34')
-    contractLat = new ContractLat('Employment Contract')
+    contractLat = new ContractLatvia('Employment Contract')
   })
 
   it('should not allow signing if Mobile ID authorization is not activated', () => {
