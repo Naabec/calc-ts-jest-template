@@ -1,4 +1,3 @@
-
 export class BaseBalticUser {
   name: string
   surName: string

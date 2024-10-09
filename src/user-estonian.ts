@@ -10,7 +10,6 @@ export class UserEstonian extends BaseBalticUser {
     personalCode: number,
     phone: number,
     address: string,
-
   ) {
     super(name, surName, age, personalCode, phone, address)
     this.mobileIDAuthorization = undefined

@@ -1,6 +1,5 @@
 import { BaseBalticUser } from './base-class'
 
-
 export class UserLatvian extends BaseBalticUser {
   activateEParakstsForLatvia: undefined | boolean
 
@@ -11,7 +10,6 @@ export class UserLatvian extends BaseBalticUser {
     personalCode: number,
     phone: number,
     address: string,
-
   ) {
     super(name, surName, age, personalCode, phone, address)
     this.activateEParakstsForLatvia = undefined
